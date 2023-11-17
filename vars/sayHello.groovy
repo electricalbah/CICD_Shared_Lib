@@ -24,8 +24,8 @@ def getWebsiteText(url){
 
 
 def getWebsiteText3(url){
-    //def sample = new com.foo.JenkinsHttpClient()
-    def sample = new JenkinsHttpClient()
+    def sample = new com.foo.JenkinsHttpClient()
+    //def sample = new JenkinsHttpClient()
     return sample.getWebsiteText2(url)
 }
 
