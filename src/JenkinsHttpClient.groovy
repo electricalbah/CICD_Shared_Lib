@@ -7,7 +7,7 @@ import jodd.http.HttpRequest
 import jodd.http.HttpResponse
 
 
-class JenkinsHttpClient implements Serializable {
+public class JenkinsHttpClient implements Serializable {
 
     private String userAgent
 
