@@ -1,5 +1,8 @@
 #!/usr/bin/env groovy
 
+import com.foo.JenkinsHttpClient
+
+
 //call is special function in teh vars folder
 //called like - sayHello 'Alex'
 def call(String name = 'human') {
@@ -17,6 +20,11 @@ def getWebsiteText(url){
                 requestProperties: ['Connection': 'close'])
 }
 
+
+def getWebsiteText3(url){
+    def sample = new com.foo.JenkinsHttpClient()
+    return sample.getWebsiteText2(url)
+}
 
 
 
