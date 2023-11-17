@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-//import com.foo.JenkinsHttpClient
-import com.foo.*
+import com.util.JenkinsHttpClient
+//import com.util.*
 //import JenkinsHttpClient
 
 
@@ -24,7 +24,7 @@ def getWebsiteText(url){
 
 
 def getWebsiteText3(url){
-    def sample = new com.foo.JenkinsHttpClient()
+    def sample = new com.util.JenkinsHttpClient()
     //def sample = new JenkinsHttpClient()
     return sample.getWebsiteText2(url)
 }
