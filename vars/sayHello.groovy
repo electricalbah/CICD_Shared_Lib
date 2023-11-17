@@ -6,6 +6,7 @@ def call(String name = 'human') {
   echo "Hello, ${name}."
 }
 
+
 //called like -> sayHello.getWebsiteText("https://jsonplaceholder.typicode.com/todos/1")
 def getWebsiteText(url){
     return new URL(url)
