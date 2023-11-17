@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
-import com.foo.JenkinsHttpClient
+//import com.foo.JenkinsHttpClient
+import com.foo.*
 //import JenkinsHttpClient
 
 
