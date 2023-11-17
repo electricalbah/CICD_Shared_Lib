@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
-import com.foo.JenkinsHttpClient
+//import com.foo.JenkinsHttpClient
+import JenkinsHttpClient
 
 
 //call is special function in teh vars folder
