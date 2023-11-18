@@ -30,7 +30,7 @@ def getWebsiteText3(url){
     //return sample.getWebsiteText2(url)
 
   def tmp = new ExcelUtil()
-  tmp.printExcel(excelFilePath)
+  tmp.printExcel(url)
   return "DONE"
 
 
