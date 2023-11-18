@@ -50,7 +50,8 @@ def printExcel(excelFilePath){
 
 
 def greet(String name) {
-  echo "Hello, ${name}."
+  //echo "Hello, ${name}."
+  return "HELLO" + "" + name
 }
 
   
