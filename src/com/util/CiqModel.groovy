@@ -16,7 +16,7 @@ import net.sf.oval.constraint.NotBlank;
 
 import groovy.transform.ToString
 
-@ToString
+//@ToString
 class CiqModel {
   //@NotNull
   //@NotEmpty
