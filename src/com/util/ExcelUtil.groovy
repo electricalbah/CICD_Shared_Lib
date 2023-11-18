@@ -36,7 +36,8 @@ def printExcel(excelFilePath){
             Sheet sheet = wb.getSheetAt(0) //Get the first sheet OR wb.getSheet("SheetName");
             for (Row row : sheet) { // Iterate through rows and columns
                 for (Cell cell : row) {
-                  echo "Cell Value: ${cell.toString()}"
+                  //echo "Cell Value: ${cell.toString()}"
+                  println cell.toString()
                 }
             }
         }// finally { wb.close() }
@@ -50,7 +51,7 @@ def printExcel(excelFilePath){
 
 
 def greetz(String name) {
-  echo "HELLO $name"
+  println "HELLO " + name
 }
 
   
