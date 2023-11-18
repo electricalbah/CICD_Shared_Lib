@@ -51,7 +51,7 @@ def printExcel(excelFilePath){
 
 
 def greetz(String name) {
-  println "HELLO " + name
+  return "HELLO " + name
 }
 
   
