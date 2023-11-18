@@ -1,4 +1,4 @@
-#! /usr/bin/groovy
+rn#! /usr/bin/groovy
 package com.util
 
 @Grab(group='org.apache.poi', module='poi', version='4.1.0')   // "group":"org.apache.poi", "id":"poi", "version":"3.8"
@@ -45,7 +45,8 @@ def printExcel(excelFilePath){
       fs.close()
      }
   }
- 
+
+  return ">>>>>>>>>>>>>>>"
 }
 
 
