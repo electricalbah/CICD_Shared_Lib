@@ -49,9 +49,8 @@ def printExcel(excelFilePath){
 
 
 
-def greet(String name) {
-  //echo "Hello, ${name}."
-  return "HELLO" + "" + name
+def greetz(String name) {
+  return "HELLO " + name
 }
 
   
