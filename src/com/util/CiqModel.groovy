@@ -18,7 +18,7 @@ import groovy.transform.ToString
 
 //@ToString
 class CiqModel {
-  //@NotNull
+  @NotNull
   //@NotEmpty
   //@NotBlank
   String paramater
