@@ -14,7 +14,7 @@ import org.apache.poi.xssf.usermodel.*
 
 public class ExcelUtil {
 
-  def getWebsiteText2(url){
+  def printExcel(excelFilePath){
   //.withCloseable avaialble to new groovy only, similar to Close-with-Resource in Java
       new FileInputStream(excelFilePath).withCloseable { fs ->
       Workbook wb = new XSSFWorkbook(fs)
