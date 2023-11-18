@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
 import com.util.JenkinsHttpClient
+import com.util.ExcelUtil
 //import com.util.*
 //import JenkinsHttpClient
 
@@ -24,9 +25,16 @@ def getWebsiteText(url){
 
 
 def getWebsiteText3(url){
-    //def sample = new com.util.JenkinsHttpClient()
-    def sample = new JenkinsHttpClient()
-    return sample.getWebsiteText2(url)
+
+    //def sample = new JenkinsHttpClient()
+    //return sample.getWebsiteText2(url)
+
+  def tmp = new ExcelUtil()
+  tmp.printExcel(excelFilePath)
+  return "DONE"
+
+
+  
 }
 
 
