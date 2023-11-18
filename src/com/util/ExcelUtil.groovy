@@ -14,9 +14,9 @@ import org.apache.poi.xssf.usermodel.*
 
 public class ExcelUtil {
 
-  def printExcel(excelFilePath){
+  def printExcel(fpath){
   //.withCloseable avaialble to new groovy only, similar to Close-with-Resource in Java
-      new FileInputStream(excelFilePath).withCloseable { fs ->
+      new FileInputStream(fpath).withCloseable { fs ->
       Workbook wb = new XSSFWorkbook(fs)
       Sheet sheet = wb.getSheetAt(0) //Get the first sheet OR wb.getSheet("SheetName");
       // Iterate through rows and columns
