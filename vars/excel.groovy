@@ -4,12 +4,12 @@ import com.util.ExcelUtil
 
 
 def read(excelFilePath){
-    //def excel = new ExcelUtil()
-    //excel.printExcel(excelFilePath)
+    def excel = new ExcelUtil()
+    excel.printExcel(excelFilePath)
 
     //return 
     
-    print "SUCCESS " + excelFilePath
+    //print "SUCCESS " + excelFilePath
 }
 
 
