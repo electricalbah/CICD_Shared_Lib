@@ -19,16 +19,20 @@ import groovy.transform.ToString
 //@ToString
 class CiqModel {
   @NotNull
-  //@NotEmpty
-  //@NotBlank
+  @NotEmpty
+  @NotBlank
   String paramater
 
-
+  @NotNull
+  @NotEmpty
+  @NotBlank
   String value
 
   String description
 
-
+  @NotNull
+  @NotEmpty
+  @NotBlank
   String systemTag
 
   CiqModel(String paramater, String value, String description, String systemTag) {
