@@ -12,6 +12,7 @@ package com.util
 import net.sf.oval.constraint.MaxLength;
 import net.sf.oval.constraint.NotEmpty;
 import net.sf.oval.constraint.NotNull;
+import net.sf.oval.constraint.NotBlank;
 
 import groovy.transform.ToString
 
