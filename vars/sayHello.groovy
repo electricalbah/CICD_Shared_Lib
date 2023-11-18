@@ -29,6 +29,11 @@ def getWebsiteText3(url){
     return sample.getWebsiteText2(url)
 }
 
+def greet(url){
+    return "HELLO " + url
+}
+
+
 
 
 
