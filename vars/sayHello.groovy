@@ -25,16 +25,8 @@ def getWebsiteText(url){
 
 
 def getWebsiteText3(url){
-
-    //def sample = new JenkinsHttpClient()
-    //return sample.getWebsiteText2(url)
-
-  def tmp = new ExcelUtil()
-  tmp.printExcel(url)
-  return "DONE"
-
-
-  
+    def sample = new JenkinsHttpClient()
+    return sample.getWebsiteText2(url)
 }
 
 
