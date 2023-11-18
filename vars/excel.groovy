@@ -7,7 +7,9 @@ def read(excelFilePath){
     //def excel = new ExcelUtil()
     //excel.printExcel(excelFilePath)
 
-    return "SUCCESS " + excelFilePath
+    //return 
+    
+    print "SUCCESS " + excelFilePath
 }
 
 
