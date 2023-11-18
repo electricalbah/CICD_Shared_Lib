@@ -36,10 +36,10 @@ class CiqModel {
   String systemTag
 
   CiqModel(String paramater, String value, String description, String systemTag) {
-    this.first = paramater
-    this.last = value
-    this.first = description
-    this.last = systemTag
+    this.paramater = paramater
+    this.value = value
+    this.description = description
+    this.systemTag = systemTag
   }
   
 }
