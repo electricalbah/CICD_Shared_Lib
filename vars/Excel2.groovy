@@ -9,8 +9,9 @@ def read2(excelFilePath){
 }
 
 
-def greetNow(excelFilePath){
-    return "JOGO"
+
+def greet(url){
+    return "HELLO " + url
 }
 
 
