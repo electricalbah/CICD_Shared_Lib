@@ -3,7 +3,7 @@
 import com.util.ExcelUtil
 
 
-def read2(excelFilePath){
+def read(excelFilePath){
     def excel = new ExcelUtil()
     excel.printExcel(excelFilePath)
 }
