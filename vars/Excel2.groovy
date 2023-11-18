@@ -9,3 +9,10 @@ def read2(excelFilePath){
 }
 
 
+def greetNow(excelFilePath){
+    echo '$greet'
+}
+
+
+
+
