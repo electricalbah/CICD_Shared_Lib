@@ -16,7 +16,7 @@ def read(excelFilePath){
 
 def greet(url){
     def excel = new ExcelUtil()
-    excel.greetz(url)
+    print excel.greetz(url)
     //return "HELLO " + url
 }
 
