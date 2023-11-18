@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+package com.util
 //Maven POM to Groovy Grab Conversion
 //<!-- https://mvnrepository.com/artifact/net.sf.oval/oval -->
 //<dependency>
