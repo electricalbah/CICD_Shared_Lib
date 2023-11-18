@@ -1,4 +1,4 @@
-rn#! /usr/bin/groovy
+#!/usr/bin/env groovy
 package com.util
 
 @Grab(group='org.apache.poi', module='poi', version='4.1.0')   // "group":"org.apache.poi", "id":"poi", "version":"3.8"
