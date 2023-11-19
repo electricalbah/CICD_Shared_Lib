@@ -25,21 +25,7 @@ int S_TAG=1
 int HEADER=0
 
 def parseCIQFile(OutputDto outputDto){
-
-  //.withCloseable avaialble to new groovy only, similar to Close-with-Resource in Java
-  //new FileInputStream(excelFilePath).withCloseable { fs ->
-  //    Workbook wb = new XSSFWorkbook(fs)
-  //    Sheet sheet = wb.getSheetAt(0) //Get the first sheet OR wb.getSheet("SheetName");
-  //    // Iterate through rows and columns
-  //    for (Row row : sheet) {
-  //      for (Cell cell : row) {
-  //         echo "Cell Value: ${cell.toString()}"
-  //      }
-  //    }
-  //  }
-
-
-
+  
   new FileInputStream(outputDto.ciqFilePath).with { fs ->
     try {
         new XSSFWorkbook(fs).with { wb ->
