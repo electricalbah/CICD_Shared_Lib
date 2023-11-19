@@ -44,11 +44,11 @@ def parseCIQFile(OutputDto outputDto){
             for (Row row : sheet) { // Iterate through rows and columns
 
               CiqModel ciqModel = new CiqModel()
-              ciqModel.setParamater(row.getCell(PARAM))
-              ciqModel.setValue(row.getCell(VALUE))
-              ciqModel.setDescription(row.getCell(DESC))
-              ciqModel.setSystemTag(row.getCell(S_TAG))
-              outputDto.ciqItems.add(row.getCell(PARAM), ciqModel)
+              ciqModel.setParamater(row.getCell(PARAM).toString())
+              ciqModel.setValue(row.getCell(VALUE).toString())
+              ciqModel.setDescription(row.getCell(DESC).toString())
+              ciqModel.setSystemTag(row.getCell(S_TAG).toString())
+              outputDto.ciqItems.add(row.getCell(PARAM).toString(), ciqModel)
                 //for (Cell cell : row) {
                   //echo "Cell Value: ${cell.toString()}"
                 //  println cell.toString()
