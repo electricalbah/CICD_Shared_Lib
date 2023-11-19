@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.*
 import org.apache.poi.ss.util.*
 import org.apache.poi.hssf.usermodel.*
 import org.apache.poi.xssf.usermodel.*
-
+//HSSFCell
 
 
 class ExcelUtil {
@@ -47,9 +47,9 @@ def parseCIQFile(OutputDto outputDto){
               if(row.getRowNum ()==HEADER)
                 continue
               ciqModel = new CiqModel()
-              ciqModel.setParamater(row.getCell(PARAM).getStringCellValue())
-              ciqModel.setValue(row.getCell(VALUE).getStringCellValue())
-              ciqModel.setDescription(row.getCell(DESC).toString())
+              ciqModel.setParamater(row.getCell(PARAM).getCellType()) //getStringCellValue() //getNumericCellValue()  //getCellType()
+              ciqModel.setValue(row.getCell(VALUE).getCellType())
+              ciqModel.setDescription(row.getCell(DESC).getStringCellValue())
               ciqModel.setSystemTag(row.getCell(S_TAG).toString())
               outputDto.ciqItems.put(row.getCell(PARAM).toString(), ciqModel)
                 //for (Cell cell : row) {
