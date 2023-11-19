@@ -47,8 +47,8 @@ def parseCIQFile(OutputDto outputDto){
               if(row.getRowNum ()==HEADER)
                 continue
               ciqModel = new CiqModel()
-              ciqModel.setParamater(row.getCell(PARAM).getCellType()) //getStringCellValue() //getNumericCellValue()  //getCellType()
-              ciqModel.setValue(row.getCell(VALUE).getCellType())
+              ciqModel.setParamater(row.getCell(PARAM).getCellType().toString()) //getStringCellValue() //getNumericCellValue()  //getCellType()
+              ciqModel.setValue(row.getCell(VALUE).getCellType().toString())
               ciqModel.setDescription(row.getCell(DESC).getStringCellValue())
               ciqModel.setSystemTag(row.getCell(S_TAG).toString())
               outputDto.ciqItems.put(row.getCell(PARAM).toString(), ciqModel)
