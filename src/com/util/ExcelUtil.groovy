@@ -48,7 +48,7 @@ def parseCIQFile(OutputDto outputDto){
               ciqModel.setValue(row.getCell(VALUE).toString())
               ciqModel.setDescription(row.getCell(DESC).toString())
               ciqModel.setSystemTag(row.getCell(S_TAG).toString())
-              outputDto.getCiqItems.add(row.getCell(PARAM).toString(), ciqModel)
+              outputDto.getCiqItems.put(row.getCell(PARAM).toString(), ciqModel)
                 //for (Cell cell : row) {
                   //echo "Cell Value: ${cell.toString()}"
                 //  println cell.toString()
