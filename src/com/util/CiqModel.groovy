@@ -34,12 +34,5 @@ class CiqModel {
   @NotEmpty
   @NotBlank
   String systemTag
-
-//  CiqModel(String paramater, String value, String description, String systemTag) {
-//   this.paramater = paramater
-//    this.value = value
-//    this.description = description
-//    this.systemTag = systemTag
-//  }
   
 }
