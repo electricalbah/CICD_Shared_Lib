@@ -41,9 +41,9 @@ def parseCIQFile(OutputDto outputDto){
     try {
         new XSSFWorkbook(fs).with { wb ->
             Sheet sheet = wb.getSheetAt(0) //Get the first sheet OR wb.getSheet("SheetName");
+            CiqModel ciqModel 
             for (Row row : sheet) { // Iterate through rows and columns
-
-              CiqModel ciqModel = new CiqModel()
+              ciqModel = new CiqModel()
               ciqModel.setParamater(row.getCell(PARAM).toString())
               ciqModel.setValue(row.getCell(VALUE).toString())
               ciqModel.setDescription(row.getCell(DESC).toString())
