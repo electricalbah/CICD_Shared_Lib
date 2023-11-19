@@ -48,7 +48,7 @@ def parseCIQFile(OutputDto outputDto){
                 continue
               ciqModel = new CiqModel()
               ciqModel.setParamater(row.getCell(PARAM).getCellType().toString()) //getStringCellValue() //getNumericCellValue()  //getCellType()
-              if (row.getCell(VALUE).getCellType() == "NUMERIC"){
+              if (row.getCell(VALUE).getCellType() == Cell.CELL_TYPE_NUMERIC){
                 ciqModel.setValue(row.getCell(VALUE).getNumericCellValue())
               } else {
                 ciqModel.setValue(row.getCell(VALUE).toString())
