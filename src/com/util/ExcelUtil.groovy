@@ -51,7 +51,7 @@ def parseCIQFile(OutputDto outputDto){
               if (row.getCell(VALUE).getCellType() == "NUMERIC"){
                 ciqModel.setValue(row.getCell(VALUE).getNumericCellValue())
               } else {
-                ciqModel.setValue(row.getCell(VALUE).toString()()
+                ciqModel.setValue(row.getCell(VALUE).toString())
               }
               ciqModel.setDescription(row.getCell(DESC).toString())
               ciqModel.setSystemTag(row.getCell(S_TAG).toString())
