@@ -3,7 +3,7 @@ package com.util
 
 class OutputDto {
   String ciqFilePath
-  List<Integer> errors //both Business and system Errors
+  List<String> errors //both Business and system Errors
   Map<String,CiqModel> ciqItems
 
 
