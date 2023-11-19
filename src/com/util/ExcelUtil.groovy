@@ -44,7 +44,7 @@ def parseCIQFile(OutputDto outputDto){
               CiqModel ciqModel = new CiqModel()
               ciqModel.setParamater(row.getCell(PARAM))
               ciqModel.setValue(row.getCell(VALUE))
-              ciqModel.setDescription(row.getCell(DESC)))
+              ciqModel.setDescription(row.getCell(DESC))
               ciqModel.setSystemTag(row.getCell(S_TAG))
               outputDto.ciqItems.add(row.getCell(PARAM), ciqModel)
                 //for (Cell cell : row) {
