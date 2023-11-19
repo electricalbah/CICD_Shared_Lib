@@ -20,6 +20,7 @@ int PARAM=0
 int VALUE=1
 int DESC=1
 int S_TAG=1
+int HEADER=0
 
 def parseCIQFile(OutputDto outputDto){
 
@@ -43,6 +44,8 @@ def parseCIQFile(OutputDto outputDto){
             Sheet sheet = wb.getSheetAt(0) //Get the first sheet OR wb.getSheet("SheetName");
             CiqModel ciqModel 
             for (Row row : sheet) { // Iterate through rows and columns
+              if(row.getRowNum ()==HEADER)
+                continue
               ciqModel = new CiqModel()
               ciqModel.setParamater(row.getCell(PARAM).toString())
               ciqModel.setValue(row.getCell(VALUE).toString())
