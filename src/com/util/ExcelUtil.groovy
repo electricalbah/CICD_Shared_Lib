@@ -72,6 +72,36 @@ def parseCIQFile(OutputDto outputDto){
   return outputDto
 }
 
+//TODO - need clean up
+//https://poi.apache.org/apidocs/dev/org/apache/poi/ss/usermodel/CellType.html
+ def getValue(Row row, Cell cell, List data) {
+    def rowIndex = row.getRowNum()
+    def colIndex = cell.getColumnIndex()
+    def value = ""
+    switch (cell.getCellType()) {
+      case CellType.STRING:
+        value = cell.getRichStringCellValue().getString();
+        break;
+      case CellType.NUMERIC:
+        if (DateUtil.isCellDateFormatted(cell)) {
+            value = cell.getDateCellValue();
+        } else {
+            value = cell.getNumericCellValue();
+        }
+        break;
+      case CellType.BOOLEAN:
+        value = cell.getBooleanCellValue();
+        break;
+      case CellType.FORMULA:
+        value = cell.getCellFormula();
+        break;
+      default:
+        value = ""
+    }
+    data[colIndex] = value
+    data
+  }
+
 
 
 def greetz(String name) {
