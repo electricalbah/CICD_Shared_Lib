@@ -12,12 +12,14 @@ import org.apache.poi.ss.util.*
 import org.apache.poi.hssf.usermodel.*
 import org.apache.poi.xssf.usermodel.*
 
+
+
+class ExcelUtil {
+
 int PARAM=0
 int VALUE=1
 int DESC=1
 int S_TAG=1
-
-class ExcelUtil {
 
 def parseCIQFile(OutputDto outputDto){
 
