@@ -12,12 +12,5 @@ def read(OutputDto outputDto){
 
 
 
-def greet(url){
-    def excel = new ExcelUtil()
-    excel.greetz(url)
-    //return "HELLO " + url
-}
-
-
 
 
