@@ -19,7 +19,7 @@ int S_TAG=1
 
 class ExcelUtil {
 
-def printExcel(OutputDto outputDto){
+def parseCIQFile(OutputDto outputDto){
 
   //.withCloseable avaialble to new groovy only, similar to Close-with-Resource in Java
   //new FileInputStream(excelFilePath).withCloseable { fs ->
